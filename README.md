@@ -9,7 +9,7 @@ A modern, responsive, and productivity-focused freelancer workspace website buil
 ##  Preview
 
 ## Dashboard Preview
-![Home Page](Screenshots\Dashboard_preveiw1.png
+![Home Page](Screenshots\Dashboard_preveiw1.png)
 ## Project Page Preview
 ![project page](Screenshots\Project_page_preveiw1.png)
 ![project page](Screenshots\Project_page_preveiw1(2).png)
