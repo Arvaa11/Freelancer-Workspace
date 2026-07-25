@@ -2322,6 +2322,255 @@ textarea {
 
 }
 
+/* ==========================================
+   RESPONSIVE LAYOUT REFINEMENTS
+========================================== */
+
+html {
+    min-width: 320px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.main-content,
+.dashboard-card,
+.calendar-card,
+.selected-date-section,
+.upcoming-events-section,
+.settings-card,
+.project-card,
+.task-card,
+.client-card,
+.event-item-card {
+    min-width: 0;
+}
+
+.cards,
+.stats-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.section-grid {
+    grid-template-columns: minmax(0, 1.6fr) minmax(300px, 1fr);
+}
+
+.calendar-grid {
+    gap: clamp(4px, 1vw, 10px);
+}
+
+.calendar-grid span,
+.calendar-day {
+    min-height: 42px;
+    padding: 8px 2px;
+}
+
+@media (max-width: 1024px) {
+    .main-content {
+        padding: 28px;
+    }
+
+    .section-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .clients-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .calendar-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 900px) {
+    .sidebar {
+        padding: 14px 20px;
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        overflow: hidden;
+    }
+
+    .logo {
+        flex: 0 0 auto;
+        margin: 0;
+    }
+
+    .logo h2 {
+        font-size: 22px;
+    }
+
+    .sidebar ul {
+        display: flex;
+        flex: 1;
+        gap: 6px;
+        overflow-x: auto;
+        scrollbar-width: thin;
+    }
+
+    .sidebar li {
+        flex: 0 0 auto;
+    }
+
+    .sidebar a {
+        padding: 10px 12px;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 640px) {
+    .main-content {
+        padding: 20px 16px 28px;
+    }
+
+    .header {
+        gap: 18px;
+    }
+
+    .welcome h1 {
+        font-size: 26px;
+        line-height: 1.2;
+    }
+
+    .header-right,
+    .header-right > *,
+    .search-box,
+    .profile {
+        width: 100%;
+    }
+
+    .profile {
+        justify-content: flex-start;
+    }
+
+    .cards,
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-top: 24px;
+    }
+
+    .card,
+    .stat-card,
+    .dashboard-card,
+    .setting-card,
+    .client-card,
+    .project-card,
+    .task-card,
+    .event-card,
+    .mini-card,
+    .calendar-card,
+    .selected-date-section,
+    .upcoming-events-section {
+        padding: 18px;
+        border-radius: 14px;
+    }
+
+    .filter-panel {
+        align-items: stretch;
+        margin-top: 24px;
+    }
+
+    .filter-buttons {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 4px;
+    }
+
+    .filter-buttons button {
+        flex: 0 0 auto;
+    }
+
+    .task-card,
+    .client-card,
+    .event-item-card {
+        grid-template-columns: 1fr;
+        align-items: start;
+    }
+
+    .task-card input[type='checkbox'] {
+        grid-row: 1;
+    }
+
+    .task-meta,
+    .task-actions,
+    .client-actions {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .client-card img {
+        width: 64px;
+        height: 64px;
+    }
+
+    .client-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .calendar-header {
+        gap: 10px;
+    }
+
+    .calendar-header h2 {
+        min-width: 0;
+        font-size: 16px;
+    }
+
+    .calendar-grid span {
+        font-size: 11px;
+    }
+
+    .calendar-grid span,
+    .calendar-day {
+        min-height: 34px;
+        font-size: 12px;
+    }
+
+    .event-item-card p {
+        grid-column: auto;
+    }
+
+    .event-actions {
+        justify-content: flex-start;
+    }
+
+    .deadline-item,
+    .activity-item {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 420px) {
+    .sidebar {
+        gap: 12px;
+        padding-inline: 14px;
+    }
+
+    .logo h2 {
+        display: none;
+    }
+
+    .sidebar a {
+        padding: 9px 10px;
+        font-size: 13px;
+    }
+
+    .section-header h2,
+    .setting-card-header h2 {
+        font-size: 19px;
+    }
+
+    .card-icon {
+        width: 52px;
+        height: 52px;
+        font-size: 18px;
+    }
+}
+
 
 /* ==========================================
    SMOOTH ANIMATIONS
