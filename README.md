@@ -8,7 +8,24 @@ A modern, responsive, and productivity-focused freelancer workspace website buil
 
 ##  Preview
 
-Add a screenshot or GIF of the homepage here.
+## Dashboard Preview
+![Home Page](Screenshots\Dashboard_preveiw1.png)
+## Project Page Preview
+![project page](Screenshots\Project_page_preveiw1.png)
+![project page](Screenshots\Project_page_preveiw1(2).png)
+## Task page Preview
+![Task page](Screenshots\task_page_preveiw1.png)
+![Task page](Screenshots\task_page_preveiw2.png)
+## cleint page Preview
+![client page](Screenshots\client_page_preveiw1.png)
+![client page](Screenshots\client_page_preveiw2.png)
+## calendar page Preview
+![calendar page](Screenshots\calendar_page_preveiw1.png)
+![calendar page](Screenshots\calendar_page_preveiw2.png)
+## setting page Preview
+![setting page](Screenshots\setting_page_preveiw1.png)
+![setting page](Screenshots\setting_page_preveiw2.png)
+
 
 ##  Features
 
