@@ -1,0 +1,227 @@
+/* ==========================================
+   DARK THEME
+   Freelancer Workspace
+========================================== */
+
+body.dark-theme{
+
+    --primary:#3B82F6;
+
+    --sidebar:#111827;
+    --sidebar-hover:#273449;
+
+    --background:#0F172A;
+
+    --white:#1E293B;
+
+    --surface-subtle:#273449;
+
+    --text:#F8FAFC;
+    --text-light:#CAD0D8;
+
+    --border:#334155;
+
+    --shadow:0 18px 40px rgba(0,0,0,.22);
+
+    background:var(--background);
+    color:var(--text);
+
+}
+
+/* ========= MAIN ========= */
+
+body.dark-theme .dashboard,
+body.dark-theme .main-content{
+
+    background:var(--background);
+
+}
+
+body.dark-theme .sidebar{
+
+    background:var(--sidebar);
+    border-right:1px solid var(--border);
+
+}
+
+body.dark-theme .header{
+
+    background:transparent;
+    border-bottom:none;
+
+}
+
+/* ========= CARDS ========= */
+
+body.dark-theme .card,
+body.dark-theme .stat-card,
+body.dark-theme .dashboard-card,
+body.dark-theme .settings-card,
+body.dark-theme .setting-card,
+body.dark-theme .project-card,
+body.dark-theme .task-card,
+body.dark-theme .client-card,
+body.dark-theme .calendar-card,
+body.dark-theme .event-card,
+body.dark-theme .mini-card{
+
+    background:var(--white);
+    border:1px solid var(--border);
+    box-shadow:var(--shadow);
+
+}
+
+/* ========= INNER ITEMS ========= */
+
+body.dark-theme .project-item,
+body.dark-theme .task-item,
+body.dark-theme .client-item{
+
+    background:#273449;
+    border:1px solid #3B4A61;
+
+}
+
+/* ========= PROFILE ========= */
+
+body.dark-theme .profile{
+
+    background:#273449;
+    border-color:var(--border);
+
+}
+
+/* ========= SEARCH ========= */
+
+body.dark-theme .search-box{
+
+    background:#273449;
+    border-color:var(--border);
+
+}
+
+body.dark-theme .search-box input{
+
+    color:var(--text);
+
+}
+
+body.dark-theme .search-box input::placeholder{
+
+    color:var(--text-light);
+
+}
+
+/* ========= INPUTS ========= */
+
+body.dark-theme input,
+body.dark-theme textarea,
+body.dark-theme select{
+
+    background:#334155;
+    border:1px solid #475569;
+    color:var(--text);
+
+}
+
+body.dark-theme input::placeholder,
+body.dark-theme textarea::placeholder{
+
+    color:var(--text-light);
+
+}
+
+/* ========= TEXT ========= */
+
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4,
+body.dark-theme h5,
+body.dark-theme h6{
+
+    color:var(--text);
+
+}
+
+body.dark-theme p,
+body.dark-theme span,
+body.dark-theme small,
+body.dark-theme label{
+
+    color:var(--text-light);
+
+}
+
+/* ========= BUTTON ========= */
+
+body.dark-theme .primary-btn{
+
+    background:var(--primary);
+
+}
+
+body.dark-theme .primary-btn:hover{
+
+    background:#2563EB;
+
+}
+
+/* ========= PROGRESS ========= */
+
+body.dark-theme .progress{
+
+    background:#475569;
+
+}
+
+body.dark-theme .progress-fill,
+body.dark-theme .progress-bar{
+
+    background:var(--primary);
+
+}
+
+/* ========= TABLE ========= */
+
+body.dark-theme table{
+
+    background:var(--white);
+
+}
+
+body.dark-theme th{
+
+    background:#273449;
+    color:var(--text);
+
+}
+
+body.dark-theme td{
+
+    border-color:var(--border);
+    color:var(--text-light);
+
+}
+
+/* ========= BADGE ========= */
+
+body.dark-theme .badge{
+
+    background:#334155;
+    color:var(--text);
+
+}
+
+/* ========= HOVER ========= */
+
+body.dark-theme .card:hover,
+body.dark-theme .stat-card:hover,
+body.dark-theme .project-card:hover,
+body.dark-theme .task-card:hover,
+body.dark-theme .client-card:hover,
+body.dark-theme .settings-card:hover{
+
+    border-color:var(--primary);
+
+}

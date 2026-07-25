@@ -6,7 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendar - WorkSpace</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/variable.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/component.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/clients.css">
+    <link rel="stylesheet" href="css/calendar.css">
+    <link rel="stylesheet" href="css/settings.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tasks.css">
 </head>
 
 <body>
@@ -49,19 +59,31 @@
             <section class="stats-grid">
                 <div class="stat-card">
                     <div class="stat-icon blue"><i class="fa-solid fa-calendar"></i></div>
-                    <div><p>Total Events</p><h2 id="total-events">0</h2></div>
+                    <div>
+                        <p>Total Events</p>
+                        <h2 id="total-events">0</h2>
+                    </div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-icon yellow"><i class="fa-solid fa-bell"></i></div>
-                    <div><p>Due Today</p><h2 id="due-today">0</h2></div>
+                    <div>
+                        <p>Due Today</p>
+                        <h2 id="due-today">0</h2>
+                    </div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-icon red"><i class="fa-solid fa-exclamation"></i></div>
-                    <div><p>Overdue</p><h2 id="overdue">0</h2></div>
+                    <div>
+                        <p>Overdue</p>
+                        <h2 id="overdue">0</h2>
+                    </div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-icon green"><i class="fa-solid fa-check"></i></div>
-                    <div><p>Completed</p><h2 id="completed-events">0</h2></div>
+                    <div>
+                        <p>Completed</p>
+                        <h2 id="completed-events">0</h2>
+                    </div>
                 </div>
             </section>
 
@@ -85,9 +107,11 @@
             <section class="calendar-layout">
                 <div class="calendar-card">
                     <div class="calendar-header">
-                        <button type="button" id="prev-month" class="nav-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                        <button type="button" id="prev-month" class="nav-btn"><i
+                                class="fa-solid fa-chevron-left"></i></button>
                         <h2 id="month-year"></h2>
-                        <button type="button" id="next-month" class="nav-btn"><i class="fa-solid fa-chevron-right"></i></button>
+                        <button type="button" id="next-month" class="nav-btn"><i
+                                class="fa-solid fa-chevron-right"></i></button>
                     </div>
                     <div class="calendar-grid" id="calendar-grid">
                         <!-- Dynamically generated calendar -->
@@ -145,7 +169,8 @@
                             <label>Time (Optional)<input name="time" type="time"></label>
                         </div>
                         <div class="form-row">
-                            <label>Related Project<input name="project" type="text" placeholder="e.g., Website Redesign"></label>
+                            <label>Related Project<input name="project" type="text"
+                                    placeholder="e.g., Website Redesign"></label>
                         </div>
                         <label>Description<textarea name="description" rows="3"></textarea></label>
                         <div style="display:flex;gap:12px;justify-content:flex-end;margin-top:14px;">

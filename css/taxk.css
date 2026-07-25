@@ -1,0 +1,194 @@
+/* ==========================================
+   TASKS PAGE
+========================================== */
+
+/* Tasks List */
+
+.tasks-list {
+    display: grid;
+    gap: 18px;
+}
+
+/* ==========================================
+   TASK CARD
+========================================== */
+
+.task-card {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 18px;
+    padding: 20px;
+}
+
+.task-card h3 {
+    margin-bottom: 6px;
+    font-size: 18px;
+    color: var(--text);
+}
+
+.task-card p {
+    color: var(--text-light);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* ==========================================
+   CHECKBOX
+========================================== */
+
+.task-card input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--primary);
+    cursor: pointer;
+}
+
+/* ==========================================
+   COMPLETED TASK
+========================================== */
+
+.task-card.completed {
+    opacity: .6;
+}
+
+.task-card.completed h3,
+.task-card.completed p {
+    text-decoration: line-through;
+}
+
+/* ==========================================
+   TASK META
+========================================== */
+
+.task-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+    font-size: 14px;
+    color: var(--text-light);
+}
+
+/* ==========================================
+   TASK ACTIONS
+========================================== */
+
+.task-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+/* ==========================================
+   DUE DATE
+========================================== */
+
+.due-date {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 6px 12px;
+
+    background: var(--surface-subtle);
+    border-radius: 999px;
+
+    color: var(--text-light);
+    font-size: 13px;
+}
+
+/* ==========================================
+   PRIORITY BADGES
+========================================== */
+
+.priority-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 6px 12px;
+
+    border-radius: 999px;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.priority-pill.high {
+    background: #FEF3C7;
+    color: #92400E;
+}
+
+.priority-pill.medium {
+    background: #E0F2FE;
+    color: #0369A1;
+}
+
+.priority-pill.low {
+    background: #ECFCCB;
+    color: #166534;
+}
+
+/* ==========================================
+   STATUS BADGES
+========================================== */
+
+.status-today {
+    background: #FEF3C7;
+    color: #92400E;
+}
+
+.status-tomorrow {
+    background: #FFF7ED;
+    color: #9A3412;
+}
+
+.status-upcoming {
+    background: #E0F2FE;
+    color: #0369A1;
+}
+
+.status-overdue {
+    background: #FEE2E2;
+    color: #991B1B;
+}
+
+.status-completed {
+    background: #ECFCCB;
+    color: #166534;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 768px) {
+
+    .task-card {
+        grid-template-columns: 1fr;
+        align-items: flex-start;
+    }
+
+    .task-meta,
+    .task-actions {
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .task-card {
+        padding: 16px;
+    }
+
+    .task-card h3 {
+        font-size: 17px;
+    }
+
+    .due-date,
+    .priority-pill {
+        font-size: 12px;
+    }
+}

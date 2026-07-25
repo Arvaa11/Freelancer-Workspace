@@ -1,0 +1,260 @@
+/* ==========================================
+   CALENDAR PAGE
+========================================== */
+
+.calendar-layout{
+    display:grid;
+    grid-template-columns:1.5fr .9fr;
+    gap:24px;
+    margin-top:32px;
+}
+
+.calendar-card{
+    background:var(--white);
+    border:1px solid var(--border);
+    border-radius:20px;
+    padding:24px;
+    box-shadow:var(--shadow);
+}
+
+.calendar-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:16px;
+    margin-bottom:24px;
+}
+
+.calendar-header h2{
+    font-size:22px;
+    font-weight:600;
+}
+
+.nav-btn{
+    width:42px;
+    height:42px;
+    border:none;
+    border-radius:12px;
+    background:var(--surface-subtle);
+    color:var(--text);
+    cursor:pointer;
+    transition:.3s;
+}
+
+.nav-btn:hover{
+    background:var(--primary);
+    color:#fff;
+}
+
+.calendar-grid{
+    display:grid;
+    grid-template-columns:repeat(7,1fr);
+    gap:10px;
+}
+
+.calendar-grid span{
+    text-align:center;
+    font-weight:600;
+    color:var(--text-light);
+    padding:10px 0;
+}
+
+.calendar-day{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:48px;
+    border-radius:12px;
+    cursor:pointer;
+    border:1px solid var(--border);
+    background:var(--white);
+    transition:.3s;
+}
+
+.calendar-day:hover{
+    background:#EFF6FF;
+    border-color:var(--primary);
+}
+
+.calendar-day.today,
+.calendar-day.selected-day{
+    background:var(--primary);
+    color:#fff;
+    border-color:var(--primary);
+}
+
+.calendar-day.muted{
+    opacity:.45;
+    cursor:default;
+}
+
+.calendar-day.has-events{
+    position:relative;
+}
+
+.calendar-day.has-events::after{
+    content:"";
+    position:absolute;
+    bottom:6px;
+    left:50%;
+    transform:translateX(-50%);
+    width:6px;
+    height:6px;
+    border-radius:50%;
+    background:var(--primary);
+}
+
+.calendar-sidebar{
+    display:grid;
+    gap:24px;
+}
+
+.selected-date-section,
+.upcoming-events-section{
+    background:var(--white);
+    border-radius:20px;
+    padding:24px;
+    border:1px solid var(--border);
+    box-shadow:var(--shadow);
+}
+
+.selected-date-section h3,
+.upcoming-events-section h3{
+    margin-bottom:18px;
+    font-size:18px;
+}
+
+.date-events-list,
+.upcoming-list{
+    display:grid;
+    gap:14px;
+}
+
+.dateEventCard,
+.upcomingEventCard{
+    padding:16px;
+    border-radius:14px;
+    background:var(--surface-subtle);
+    border-left:5px solid var(--primary);
+}
+
+.dateEventCard h4,
+.upcomingEventCard h4{
+    margin-bottom:6px;
+    font-size:15px;
+}
+
+.dateEventCard p,
+.upcomingEventCard p{
+    font-size:13px;
+    color:var(--text-light);
+}
+
+.upcomingEventCard.meeting{
+    border-left-color:#06B6D4;
+}
+
+.upcomingEventCard.deadline{
+    border-left-color:#DC2626;
+}
+
+.upcomingEventCard.payment{
+    border-left-color:#059669;
+}
+
+.upcomingEventCard.personal{
+    border-left-color:#7C3AED;
+}
+
+.events-list-container{
+    display:grid;
+    gap:16px;
+    margin-top:24px;
+}
+
+.event-item-card{
+    display:grid;
+    grid-template-columns:1fr auto auto auto;
+    gap:16px;
+    align-items:center;
+    background:var(--white);
+    border-radius:18px;
+    border-left:5px solid var(--primary);
+    padding:18px;
+    box-shadow:var(--shadow);
+}
+
+.event-item-card p{
+    color:var(--text-light);
+    font-size:14px;
+}
+
+.event-actions{
+    display:flex;
+    gap:8px;
+}
+
+.event-actions button{
+    width:36px;
+    height:36px;
+    border:none;
+    border-radius:10px;
+    background:var(--surface-subtle);
+    cursor:pointer;
+    transition:.3s;
+}
+
+.event-actions button:hover{
+    background:var(--primary);
+    color:#fff;
+}
+
+/* ---------- Responsive ---------- */
+
+@media(max-width:1024px){
+
+    .calendar-layout{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .calendar-header{
+        flex-wrap:wrap;
+    }
+
+    .calendar-grid{
+        gap:6px;
+    }
+
+    .calendar-day{
+        min-height:42px;
+        font-size:13px;
+    }
+
+    .event-item-card{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .calendar-card,
+    .selected-date-section,
+    .upcoming-events-section{
+        padding:18px;
+    }
+
+    .calendar-grid span{
+        font-size:11px;
+    }
+
+    .calendar-day{
+        min-height:36px;
+        font-size:12px;
+    }
+
+}

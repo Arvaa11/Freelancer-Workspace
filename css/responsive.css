@@ -1,0 +1,403 @@
+/* ==========================================
+   RESPONSIVE
+   Freelancer Workspace
+========================================== */
+
+/* ==========================================
+   1200px
+========================================== */
+
+@media (max-width:1200px){
+
+    .cards,
+    .stats-grid{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+    }
+
+    .calendar-layout{
+        grid-template-columns:1fr;
+    }
+
+    .clients-grid{
+        grid-template-columns:1fr;
+    }
+
+    .theme-options{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .form-row{
+        grid-template-columns:1fr;
+    }
+
+}
+
+/* ==========================================
+   1024px
+========================================== */
+
+@media (max-width:1024px){
+
+    .main-content{
+        padding:28px;
+    }
+
+    .section-grid{
+        grid-template-columns:1fr;
+    }
+
+    .calendar-layout{
+        grid-template-columns:1fr;
+    }
+
+    .clients-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+/* ==========================================
+   900px
+========================================== */
+
+@media (max-width:900px){
+
+    .dashboard{
+        flex-direction:column;
+    }
+
+    .sidebar{
+
+        width:100%;
+
+        padding:16px 20px;
+
+        display:flex;
+
+        align-items:center;
+
+        gap:20px;
+
+    }
+
+    .logo{
+
+        margin:0;
+
+    }
+
+    .sidebar ul{
+
+        display:flex;
+
+        gap:8px;
+
+        flex:1;
+
+        overflow-x:auto;
+
+        scrollbar-width:thin;
+
+    }
+
+    .sidebar li{
+
+        flex:0 0 auto;
+
+    }
+
+    .sidebar a{
+
+        white-space:nowrap;
+
+    }
+
+    .main-content{
+
+        padding:24px;
+
+    }
+
+    .header,
+    .filter-panel,
+    .section-header,
+    .setting-card-header{
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+    }
+
+    .search-box{
+
+        width:100%;
+
+    }
+
+    .client-summary{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .client-actions{
+
+        justify-content:flex-start;
+
+    }
+
+}
+
+/* ==========================================
+   768px
+========================================== */
+
+@media (max-width:768px){
+
+    .settings-page{
+
+        padding:15px;
+
+    }
+
+    .settings-card{
+
+        padding:20px;
+
+    }
+
+    .form-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .theme-options{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .primary-btn,
+    .change-photo-btn{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+}
+
+/* ==========================================
+   640px
+========================================== */
+
+@media (max-width:640px){
+
+    .main-content{
+
+        padding:20px 16px;
+
+    }
+
+    .welcome h1{
+
+        font-size:26px;
+
+        line-height:1.2;
+
+    }
+
+    .header{
+
+        gap:18px;
+
+    }
+
+    .header-right{
+
+        width:100%;
+
+        gap:16px;
+
+    }
+
+    .header-right>*{
+
+        width:100%;
+
+    }
+
+    .profile{
+
+        width:100%;
+
+    }
+
+    .cards,
+    .stats-grid{
+
+        grid-template-columns:1fr;
+
+        gap:16px;
+
+    }
+
+    .project-card,
+    .task-card,
+    .client-card,
+    .event-item-card{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .task-meta,
+    .task-actions,
+    .client-actions{
+
+        align-items:flex-start;
+
+    }
+
+    .calendar-grid{
+
+        gap:6px;
+
+    }
+
+    .calendar-grid span{
+
+        font-size:11px;
+
+    }
+
+    .calendar-day{
+
+        min-height:36px;
+
+        font-size:12px;
+
+    }
+
+    .filter-buttons{
+
+        overflow-x:auto;
+
+        flex-wrap:nowrap;
+
+        padding-bottom:4px;
+
+    }
+
+    .filter-buttons button{
+
+        flex:0 0 auto;
+
+    }
+
+}
+
+/* ==========================================
+   480px
+========================================== */
+
+@media (max-width:480px){
+
+    .settings-page{
+
+        padding:10px;
+
+    }
+
+    .settings-card{
+
+        padding:15px;
+
+    }
+
+    .profile-picture img{
+
+        width:80px;
+
+        height:80px;
+
+    }
+
+    .form-group input,
+    .form-group textarea{
+
+        font-size:14px;
+
+        padding:10px;
+
+    }
+
+    .theme-card{
+
+        padding:20px;
+
+    }
+
+}
+
+/* ==========================================
+   420px
+========================================== */
+
+@media (max-width:420px){
+
+    .sidebar{
+
+        padding:14px;
+
+        gap:12px;
+
+    }
+
+    .logo h2{
+
+        display:none;
+
+    }
+
+    .sidebar a{
+
+        padding:9px 10px;
+
+        font-size:13px;
+
+    }
+
+    .card,
+    .stat-card,
+    .project-card,
+    .task-card,
+    .client-card,
+    .calendar-card,
+    .settings-card{
+
+        padding:18px;
+
+    }
+
+    .card-icon{
+
+        width:52px;
+
+        height:52px;
+
+        font-size:18px;
+
+    }
+
+    .section-header h2,
+    .setting-card-header h2{
+
+        font-size:19px;
+
+    }
+
+}

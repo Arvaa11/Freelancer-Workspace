@@ -1,0 +1,391 @@
+/* ==========================================
+   COMPONENTS
+   Freelancer Workspace
+========================================== */
+
+/* ========= SEARCH BOX ========= */
+
+.search-box{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:12px 16px;
+    min-width:240px;
+    background:var(--white);
+    border:1px solid var(--border);
+    border-radius:14px;
+}
+
+.search-box i{
+    color:var(--text-light);
+}
+
+.search-box input{
+    width:100%;
+    border:none;
+    outline:none;
+    background:transparent;
+    color:var(--text);
+}
+
+.search-box input::placeholder{
+    color:var(--text-light);
+}
+
+/* ========= PROFILE ========= */
+
+.profile{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    padding:10px 14px;
+    background:var(--white);
+    border:1px solid var(--border);
+    border-radius:16px;
+}
+
+.profile img{
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.profile h4{
+    font-size:15px;
+    margin-bottom:2px;
+}
+
+.profile small{
+    color:var(--text-light);
+}
+
+/* ========= CARDS ========= */
+
+.card,
+.stat-card,
+.dashboard-card,
+.setting-card,
+.settings-card,
+.project-card,
+.task-card,
+.client-card,
+.event-card,
+.calendar-card,
+.mini-card{
+
+    background:var(--white);
+    border:1px solid var(--border);
+    border-radius:22px;
+    box-shadow:var(--shadow);
+    padding:24px;
+
+}
+
+.card{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.stat-card{
+    display:flex;
+    align-items:center;
+    gap:16px;
+}
+
+.card-icon{
+    width:64px;
+    height:64px;
+    border-radius:18px;
+    display:grid;
+    place-items:center;
+    color:#fff;
+    font-size:22px;
+}
+
+.stat-icon{
+    width:54px;
+    height:54px;
+    border-radius:16px;
+    display:grid;
+    place-items:center;
+    color:#fff;
+    font-size:22px;
+}
+
+/* ========= ICON COLORS ========= */
+
+.earnings{
+    background:#22C55E;
+}
+
+.projects{
+    background:#2563EB;
+}
+
+.clients{
+    background:#F59E0B;
+}
+
+.tasks{
+    background:#8B5CF6;
+}
+
+.stat-icon.blue{
+    background:#2563EB;
+}
+
+.stat-icon.red{
+    background:#DC2626;
+}
+
+.stat-icon.green{
+    background:#22C55E;
+}
+
+.stat-icon.yellow{
+    background:#F59E0B;
+}
+
+.stat-icon.orange{
+    background:#F97316;
+}
+
+/* ========= CARD TEXT ========= */
+
+.card-info h4{
+    font-size:13px;
+    margin-bottom:8px;
+    text-transform:uppercase;
+    letter-spacing:.5px;
+    color:var(--text-light);
+}
+
+.card-info h2{
+    font-size:30px;
+}
+
+.card-info p,
+.stat-card p{
+    color:var(--text-light);
+}
+
+.stat-card h2{
+    font-size:28px;
+}
+
+/* ========= BUTTONS ========= */
+
+.primary-btn,
+.secondary-btn{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    padding:12px 24px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font:inherit;
+
+    transition:.3s;
+
+}
+
+.primary-btn{
+
+    background:var(--primary);
+
+    color:#fff;
+
+}
+
+.primary-btn:hover{
+
+    background:#1D4ED8;
+
+    transform:translateY(-2px);
+
+}
+
+.secondary-btn{
+
+    background:var(--surface-subtle);
+
+    color:var(--text);
+
+}
+
+.secondary-btn:hover{
+
+    background:var(--border);
+
+}
+
+/* ========= BADGES ========= */
+
+.badge,
+.status-pill,
+.priority-pill,
+.rating{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:6px 12px;
+
+    border-radius:999px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+}
+
+.status-pill.completed{
+
+    background:#ECFCCB;
+
+    color:#166534;
+
+}
+
+.status-pill.pending{
+
+    background:#FEF3C7;
+
+    color:#B45309;
+
+}
+
+.status-pill.in-progress{
+
+    background:#E0F2FE;
+
+    color:#0369A1;
+
+}
+
+.priority-pill.high{
+
+    background:#FEF3C7;
+
+    color:#92400E;
+
+}
+
+.priority-pill.medium{
+
+    background:#E0F2FE;
+
+    color:#0369A1;
+
+}
+
+.priority-pill.low{
+
+    background:#ECFCCB;
+
+    color:#166534;
+
+}
+
+.rating{
+
+    background:#EFF6FF;
+
+    color:#1D4ED8;
+
+}
+
+/* ========= PROGRESS ========= */
+
+.progress{
+
+    height:10px;
+
+    background:#E2E8F0;
+
+    border-radius:999px;
+
+    overflow:hidden;
+
+    margin-top:16px;
+
+}
+
+.progress-fill,
+.progress-bar{
+
+    height:100%;
+
+    background:var(--primary);
+
+    border-radius:999px;
+
+}
+
+/* ========= INPUTS ========= */
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select{
+
+    width:100%;
+
+    padding:14px 16px;
+
+    border:1px solid var(--border);
+
+    border-radius:14px;
+
+    background:var(--white);
+
+    color:var(--text);
+
+    outline:none;
+
+}
+
+textarea{
+
+    resize:vertical;
+
+}
+
+/* ========= LABEL ========= */
+
+label{
+
+    display:grid;
+
+    gap:8px;
+
+    font-size:14px;
+
+}
+
+/* ========= HOVER ========= */
+
+.card:hover,
+.stat-card:hover,
+.project-card:hover,
+.task-card:hover,
+.client-card:hover,
+.settings-card:hover{
+
+    transform:translateY(-4px);
+
+    transition:.3s;
+
+}

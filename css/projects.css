@@ -1,0 +1,256 @@
+/* ==========================================
+   PROJECTS PAGE
+========================================== */
+
+/* Project List */
+
+.project-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+    width: 100%;
+}
+
+/* ==========================================
+   PROJECT CARD
+========================================== */
+
+.project-card {
+    display: grid;
+    gap: 14px;
+    width: 100%;
+    padding: 20px;
+}
+
+.project-card h3 {
+    margin-bottom: 8px;
+    font-size: 20px;
+    color: var(--text);
+}
+
+.project-card p {
+    color: var(--text-light);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* ==========================================
+   PROJECT DETAILS
+========================================== */
+
+.project-details,
+.project-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+/* ==========================================
+   STATUS BADGES
+========================================== */
+
+.status-pill,
+.priority-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 6px 12px;
+
+    border-radius: 999px;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* In Progress */
+
+.status-pill.in-progress,
+.priority-pill.medium {
+    background: #E0F2FE;
+    color: #0369A1;
+}
+
+/* Completed */
+
+.status-pill.completed,
+.priority-pill.low {
+    background: #ECFCCB;
+    color: #166534;
+}
+
+/* Pending */
+
+.status-pill.pending,
+.priority-pill.high {
+    background: #FEF3C7;
+    color: #B45309;
+}
+
+/* ==========================================
+   PROGRESS BAR
+========================================== */
+
+.progress {
+    height: 10px;
+    margin-top: 16px;
+    background: #E2E8F0;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: var(--primary);
+    border-radius: 999px;
+}
+
+/* ==========================================
+   PROJECT ACTIONS
+========================================== */
+
+.project-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+/* ==========================================
+   MODAL
+========================================== */
+
+.modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(2, 6, 23, 0.5);
+    z-index: 100;
+    padding: 24px;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-panel {
+    width: 100%;
+    max-width: 900px;
+    background: var(--white);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: var(--shadow);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.modal-close {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.modal-content {
+    display: grid;
+    gap: 16px;
+}
+
+.modal-content p {
+    color: var(--text-light);
+}
+
+/* ==========================================
+   PROJECT FORM
+========================================== */
+
+.modal-panel form {
+    display: grid;
+    gap: 18px;
+}
+
+.modal-panel .form-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+/* ==========================================
+   NOTES
+========================================== */
+
+.notes-area {
+    width: 100%;
+    min-height: 140px;
+    padding: 12px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    resize: vertical;
+}
+
+/* ==========================================
+   PROGRESS RANGE
+========================================== */
+
+.progress-range {
+    appearance: none;
+    width: 100%;
+    height: 8px;
+    background: #E2E8F0;
+    border-radius: 999px;
+}
+
+.progress-range::-webkit-slider-thumb {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--primary);
+    cursor: pointer;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 768px) {
+
+    .project-details,
+    .project-meta,
+    .project-actions {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .modal-panel .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-panel {
+        padding: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .project-card {
+        padding: 16px;
+    }
+
+    .project-card h3 {
+        font-size: 18px;
+    }
+
+    .modal-panel {
+        padding: 15px;
+    }
+}
