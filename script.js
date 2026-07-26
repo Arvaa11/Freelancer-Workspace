@@ -1802,8 +1802,8 @@ document.addEventListener('DOMContentLoaded', function () {
         if (name && profile.fullName) name.textContent = profile.fullName;
         if (title && profile.jobTitle) title.textContent = profile.jobTitle;
     }
-   
-   
+
+
 
     let savedProfile = null;
     try {
