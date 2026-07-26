@@ -7,27 +7,27 @@
    1200px
 ========================================== */
 
-@media (max-width:1200px){
+@media (max-width:1200px) {
 
     .cards,
-    .stats-grid{
-        grid-template-columns:repeat(2,minmax(0,1fr));
+    .stats-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .calendar-layout{
-        grid-template-columns:1fr;
+    .calendar-layout {
+        grid-template-columns: 1fr;
     }
 
-    .clients-grid{
-        grid-template-columns:1fr;
+    .clients-grid {
+        grid-template-columns: 1fr;
     }
 
-    .theme-options{
-        grid-template-columns:repeat(2,1fr);
+    .theme-options {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .form-row{
-        grid-template-columns:1fr;
+    .form-row {
+        grid-template-columns: 1fr;
     }
 
 }
@@ -36,22 +36,22 @@
    1024px
 ========================================== */
 
-@media (max-width:1024px){
+@media (max-width:1024px) {
 
-    .main-content{
-        padding:28px;
+    .main-content {
+        padding: 28px;
     }
 
-    .section-grid{
-        grid-template-columns:1fr;
+    .section-grid {
+        grid-template-columns: 1fr;
     }
 
-    .calendar-layout{
-        grid-template-columns:1fr;
+    .calendar-layout {
+        grid-template-columns: 1fr;
     }
 
-    .clients-grid{
-        grid-template-columns:1fr;
+    .clients-grid {
+        grid-template-columns: 1fr;
     }
 
 }
@@ -60,90 +60,90 @@
    900px
 ========================================== */
 
-@media (max-width:900px){
+@media (max-width:900px) {
 
-    .dashboard{
-        flex-direction:column;
+    .dashboard {
+        flex-direction: column;
     }
 
-    .sidebar{
+    .sidebar {
 
-        width:100%;
+        width: 100%;
 
-        padding:16px 20px;
+        padding: 16px 20px;
 
-        display:flex;
+        display: flex;
 
-        align-items:center;
+        align-items: center;
 
-        gap:20px;
-
-    }
-
-    .logo{
-
-        margin:0;
+        gap: 20px;
 
     }
 
-    .sidebar ul{
+    .logo {
 
-        display:flex;
-
-        gap:8px;
-
-        flex:1;
-
-        overflow-x:auto;
-
-        scrollbar-width:thin;
+        margin: 0;
 
     }
 
-    .sidebar li{
+    .sidebar ul {
 
-        flex:0 0 auto;
+        display: flex;
+
+        gap: 8px;
+
+        flex: 1;
+
+        overflow-x: auto;
+
+        scrollbar-width: thin;
 
     }
 
-    .sidebar a{
+    .sidebar li {
 
-        white-space:nowrap;
+        flex: 0 0 auto;
 
     }
 
-    .main-content{
+    .sidebar a {
 
-        padding:24px;
+        white-space: nowrap;
+
+    }
+
+    .main-content {
+
+        padding: 24px;
 
     }
 
     .header,
     .filter-panel,
     .section-header,
-    .setting-card-header{
+    .setting-card-header {
 
-        flex-direction:column;
+        flex-direction: column;
 
-        align-items:stretch;
-
-    }
-
-    .search-box{
-
-        width:100%;
+        align-items: stretch;
 
     }
 
-    .client-summary{
+    .search-box {
 
-        grid-template-columns:1fr;
+        width: 100%;
 
     }
 
-    .client-actions{
+    .client-summary {
 
-        justify-content:flex-start;
+        grid-template-columns: 1fr;
+
+    }
+
+    .client-actions {
+
+        justify-content: flex-start;
 
     }
 
@@ -153,148 +153,150 @@
    768px
 ========================================== */
 
-@media (max-width:768px){
+@media (max-width:768px) {
 
-    .settings-page{
+    .settings-page {
 
-        padding:15px;
-
-    }
-
-    .settings-card{
-
-        padding:20px;
+        padding: 15px;
 
     }
 
-    .form-grid{
+    .settings-card {
 
-        grid-template-columns:1fr;
-
-    }
-
-    .theme-options{
-
-        grid-template-columns:1fr;
+        padding: 20px;
 
     }
 
-    .primary-btn,
-    .change-photo-btn{
+    .form-grid {
 
-        width:70%;
-
-        justify-content:center;
+        grid-template-columns: 1fr;
 
     }
 
-}
+    .theme-options {
 
-/* ==========================================
+        grid-template-columns: 1fr;
+
+    }
+
+
+
+    /* ==========================================
    640px
 ========================================== */
 
-@media (max-width:640px){
+    @media (max-width:640px) {
 
-    .main-content{
+        .main-content {
 
-        padding:20px 16px;
+            padding: 20px 16px;
 
-    }
+        }
 
-    .welcome h1{
+        .primary-btn,
+        .change-photo-btn {
 
-        font-size:26px;
+            width: 100%;
 
-        line-height:1.2;
+            justify-content: center;
 
-    }
-
-    .header{
-
-        gap:18px;
+        }
 
     }
 
-    .header-right{
+    .welcome h1 {
 
-        width:100%;
+        font-size: 26px;
 
-        gap:16px;
-
-    }
-
-    .header-right>*{
-
-        width:100%;
+        line-height: 1.2;
 
     }
 
-    .profile{
+    .header {
 
-        width:100%;
+        gap: 18px;
+
+    }
+
+    .header-right {
+
+        width: 100%;
+
+        gap: 16px;
+
+    }
+
+    .header-right>* {
+
+        width: 100%;
+
+    }
+
+    .profile {
+
+        width: 100%;
 
     }
 
     .cards,
-    .stats-grid{
+    .stats-grid {
 
-        grid-template-columns:1fr;
+        grid-template-columns: 1fr;
 
-        gap:16px;
+        gap: 16px;
 
     }
 
     .project-card,
     .task-card,
     .client-card,
-    .event-item-card{
+    .event-item-card {
 
-        grid-template-columns:1fr;
+        grid-template-columns: 1fr;
 
     }
 
     .task-meta,
     .task-actions,
-    .client-actions{
+    .client-actions {
 
-        align-items:flex-start;
-
-    }
-
-    .calendar-grid{
-
-        gap:6px;
+        align-items: flex-start;
 
     }
 
-    .calendar-grid span{
+    .calendar-grid {
 
-        font-size:11px;
-
-    }
-
-    .calendar-day{
-
-        min-height:36px;
-
-        font-size:12px;
+        gap: 6px;
 
     }
 
-    .filter-buttons{
+    .calendar-grid span {
 
-        overflow-x:auto;
-
-        flex-wrap:nowrap;
-
-        padding-bottom:4px;
+        font-size: 11px;
 
     }
 
-    .filter-buttons button{
+    .calendar-day {
 
-        flex:0 0 auto;
+        min-height: 36px;
+
+        font-size: 12px;
+
+    }
+
+    .filter-buttons {
+
+        overflow-x: auto;
+
+        flex-wrap: nowrap;
+
+        padding-bottom: 4px;
+
+    }
+
+    .filter-buttons button {
+
+        flex: 0 0 auto;
 
     }
 
@@ -304,40 +306,40 @@
    480px
 ========================================== */
 
-@media (max-width:480px){
+@media (max-width:480px) {
 
-    .settings-page{
+    .settings-page {
 
-        padding:10px;
-
-    }
-
-    .settings-card{
-
-        padding:15px;
+        padding: 10px;
 
     }
 
-    .profile-picture img{
+    .settings-card {
 
-        width:80px;
+        padding: 15px;
 
-        height:80px;
+    }
+
+    .profile-picture img {
+
+        width: 80px;
+
+        height: 80px;
 
     }
 
     .form-group input,
-    .form-group textarea{
+    .form-group textarea {
 
-        font-size:14px;
+        font-size: 14px;
 
-        padding:10px;
+        padding: 10px;
 
     }
 
-    .theme-card{
+    .theme-card {
 
-        padding:20px;
+        padding: 20px;
 
     }
 
@@ -347,27 +349,27 @@
    420px
 ========================================== */
 
-@media (max-width:420px){
+@media (max-width:420px) {
 
-    .sidebar{
+    .sidebar {
 
-        padding:14px;
+        padding: 14px;
 
-        gap:12px;
-
-    }
-
-    .logo h2{
-
-        display:none;
+        gap: 12px;
 
     }
 
-    .sidebar a{
+    .logo h2 {
 
-        padding:9px 10px;
+        display: none;
 
-        font-size:13px;
+    }
+
+    .sidebar a {
+
+        padding: 9px 10px;
+
+        font-size: 13px;
 
     }
 
@@ -377,26 +379,26 @@
     .task-card,
     .client-card,
     .calendar-card,
-    .settings-card{
+    .settings-card {
 
-        padding:18px;
+        padding: 18px;
 
     }
 
-    .card-icon{
+    .card-icon {
 
-        width:52px;
+        width: 52px;
 
-        height:52px;
+        height: 52px;
 
-        font-size:18px;
+        font-size: 18px;
 
     }
 
     .section-header h2,
-    .setting-card-header h2{
+    .setting-card-header h2 {
 
-        font-size:19px;
+        font-size: 19px;
 
     }
 
@@ -406,32 +408,32 @@
    BUTTON RESPONSIVE
 ========================================== */
 
-@media (max-width:768px){
+@media (max-width:768px) {
 
     .primary-btn,
     .secondary-btn,
-    .change-photo-btn{
+    .change-photo-btn {
 
         width: 89%;
-        justify-content:center;
+        justify-content: center;
     }
 
-    .button-group{
-        display:flex;
-        flex-direction:column;
-        gap:12px;
+    .button-group {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
     }
 
 }
 
-@media (max-width:480px){
+@media (max-width:480px) {
 
     .primary-btn,
     .secondary-btn,
-    .change-photo-btn{
+    .change-photo-btn {
 
-        padding:12px 16px;
-        font-size:14px;
+        padding: 12px 16px;
+        font-size: 14px;
     }
 
 }
